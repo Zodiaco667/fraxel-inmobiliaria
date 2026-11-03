@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#252525">
+  <meta name="description" content="Conoce FRAXEL Inmobiliaria y explora la galería y las fichas provisionales de nuestro desarrollo residencial.">
+  <title>FRAXEL Inmobiliaria · Encuentra tu próxima residencia</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="assets/fonts/cormorant-garamond-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="hero.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#desarrollo">Saltar a las propiedades</a>
+
+  <main>
+    <section class="hero cover-hero" id="inicio" aria-labelledby="hero-title">
+      <img class="cover-photo featured-image" src="assets/jardin-comun.png" width="1600" height="900" alt="Jardines y residencias del desarrollo, imagen provisional" fetchpriority="high">
+      <div class="cover-overlay" aria-hidden="true"></div>
+  <header class="site-header integrated-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="FRAXEL Inmobiliaria · Inicio"><img src="assets/logo-transparente.png" width="1080" height="498" alt="FRAXEL Inmobiliaria"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menú <span aria-hidden="true">☰</span></button>
+      <nav id="main-nav" aria-label="Navegación principal">
+        <a href="#inicio" aria-current="location">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#desarrollo">Desarrollo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="header-contact" href="#contacto">Hablemos de tu hogar</a>
+    </div>
+  </header>
+      <div class="cover-content"><p class="cover-eyebrow">FRAXEL INMOBILIARIA</p><h1 id="hero-title">Hay lugares que<br>cambian tu manera<br><span>de vivir.</span></h1><p class="cover-description">Conoce nuestro desarrollo y encuentra<br>el lugar para tu siguiente etapa.</p><div class="cover-actions"><a class="button sand" href="#desarrollo">Ver propiedades <span aria-hidden="true">↗</span></a><a class="cover-search" href="#buscar">Buscar una propiedad</a></div></div>
+    </section>
+
+    <section class="property-layout" id="desarrollo" aria-labelledby="properties-title">
+      <div class="catalog">
+        <div class="section-heading">
+          <h2 id="properties-title">Propiedades exclusivas</h2>
+          <label class="sort-control"><span class="sr-only">Ordenar propiedades</span><select id="sort-properties"><option value="asc">Orden de referencia</option><option value="desc">Orden inverso</option></select></label>
+        </div>
+        <div class="catalog-status"><p id="result-count" aria-live="polite">4 fichas provisionales</p><button id="clear-filters" type="button" hidden>Limpiar filtros</button></div>
+        <p class="catalog-note">Las imágenes son provisionales. Los precios y las características están por confirmar.</p>
+        <div class="property-grid" id="property-grid"></div>
+        <div class="empty-state" id="empty-state" hidden><h3>No hay fichas con estos criterios</h3><p id="empty-message"></p><button class="button primary" id="reset-empty" type="button">Mostrar todas las fichas</button></div>
+      </div>
+      <aside class="location-panel" aria-label="Ubicación del proyecto">
+        <div class="map-stage"><div class="map-placeholder"><span aria-hidden="true">⌖</span><p>Ubicación del proyecto</p><button id="load-map" type="button">Mostrar mapa interactivo</button></div><iframe title="Mapa de la ubicación provisional del despacho" data-src="https://www.google.com/maps?q=19.6400118,-99.2038699&z=16&output=embed" referrerpolicy="no-referrer-when-downgrade" allowfullscreen hidden></iframe></div>
+        <div class="location-caption"><span class="eyebrow">Ubicación provisional</span><h3>Conoce la ubicación</h3><p>Consulta el punto de referencia del despacho y del desarrollo.</p><a class="button sand" href="https://maps.app.goo.gl/VZjUi59xmyXfGMJX8" target="_blank" rel="noopener noreferrer">Abrir en Google Maps <span aria-hidden="true">↗</span></a></div>
+      </aside>
+    </section>
+
+    <section class="gallery-section section-wrap" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><span class="eyebrow">El desarrollo</span><h2 id="gallery-title">Espacios para disfrutar</h2></div><p>Toca una imagen para verla en grande.</p></div>
+      <div class="amenity-grid">
+        <button class="amenity wide" type="button" data-gallery="development" data-photo="1"><img src="assets/jardin-comun.png" width="1600" height="900" alt="Jardín con pérgola y espacios de descanso" loading="lazy"><span>Jardines y áreas comunes <span aria-hidden="true">↗</span></span></button>
+        <button class="amenity" type="button" data-gallery="development" data-photo="0"><img src="assets/juegos.png" width="1448" height="1086" alt="Área de juegos infantiles en un jardín" loading="lazy"><span>Área infantil <span aria-hidden="true">↗</span></span></button>
+        <button class="amenity" type="button" data-gallery="development" data-photo="3"><img src="assets/gimnasio.png" width="616" height="277" alt="Gimnasio junto a una alberca" loading="lazy"><span>Gimnasio <span aria-hidden="true">↗</span></span></button>
+        <button class="amenity" type="button" data-gallery="development" data-photo="4"><img src="assets/alberca.png" width="1600" height="1000" alt="Alberca interior con acabados de piedra" loading="lazy"><span>Alberca <span aria-hidden="true">↗</span></span></button>
+        <button class="amenity" type="button" data-gallery="development" data-photo="2"><img src="assets/jardin-residencial.png" width="736" height="1311" alt="Jardín al atardecer con asientos colgantes" loading="lazy"><span>Jardín residencial <span aria-hidden="true">↗</span></span></button>
+      </div>
+      <p class="image-note">Galería provisional del proyecto. Las amenidades incluidas en cada vivienda están por confirmar.</p>
+    </section>
+
+    <section class="about-section section-wrap" id="nosotros" aria-labelledby="about-title">
+      <button class="office-image" type="button" data-gallery="office" data-photo="0" aria-label="Ampliar imagen del despacho FRAXEL"><img src="assets/despacho.png" width="1519" height="704" alt="Logo de FRAXEL Inmobiliaria en el interior del despacho" loading="lazy"><span>Conoce nuestro despacho <span aria-hidden="true">↗</span></span></button>
+      <div class="about-content"><span class="eyebrow">Nosotros</span><h2 id="about-title">FRAXEL Inmobiliaria</h2><p>Conoce nuestro proyecto residencial y consulta las opciones del desarrollo.</p><div class="values"><div><h3>Misión</h3><p>Información del despacho por confirmar.</p></div><div><h3>Visión</h3><p>Información del despacho por confirmar.</p></div></div></div>
+    </section>
+
+    <section class="property-search search-panel section-wrap" id="buscar" aria-labelledby="search-title">      <div class="search-content">
+        <h2 id="search-title">Encuentra tu próxima residencia</h2>
+        <form id="property-filters" role="search" aria-label="Buscar propiedades">
+          <label>Ubicación o propiedad<input name="location" type="search" placeholder="Buscar ciudad, zona o casa" autocomplete="off"></label>
+          <fieldset><legend>Rango de presupuesto</legend><div class="field-pair">
+            <label><span class="sr-only">Presupuesto mínimo en pesos</span><input name="minPrice" type="number" min="0" step="1" placeholder="Mínimo" inputmode="numeric"></label>
+            <label><span class="sr-only">Presupuesto máximo en pesos</span><input name="maxPrice" type="number" min="0" step="1" placeholder="Máximo" inputmode="numeric"></label>
+          </div></fieldset>
+          <label>Dimensión<div class="unit-field"><input name="minArea" type="number" min="0" step="1" placeholder="Superficie mínima" inputmode="numeric"><span>m²</span></div></label>
+          <fieldset><legend>Habitaciones y baños</legend><div class="field-pair">
+            <label><span class="sr-only">Habitaciones mínimas</span><select name="bedrooms"><option value="">Habitaciones</option value="1">1 o más</option><option value="2">2 o más</option><option value="3">3 o más</option><option value="4">4 o más</option></select></label>
+            <label><span class="sr-only">Baños mínimos</span><select name="bathrooms"><option value="">Baños</option><option value="1">1 o más</option><option value="2">2 o más</option><option value="3">3 o más</option></select></label>
+          </div></fieldset>
+          <button class="button primary apply-filters" type="submit">Aplicar filtros</button>
+          <p class="form-error" id="filter-error" role="alert" hidden></p>
+        </form>
+      </div></section>
+
+    <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <div><span class="eyebrow">Contacto</span><h2 id="contact-title">Hablemos de tu próximo hogar</h2><p>Consulta la ubicación provisional de nuestro despacho.</p><div class="social-block"><h3>Redes sociales</h3><p>Conoce más de FRAXEL y escríbenos en nuestras redes.</p><div class="social-links"><a href="https://www.instagram.com/faxel_inmobiliaria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de FRAXEL (abre en una pestaña nueva)"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg><span>Instagram</span><span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/FraxelInmobiliaria" target="_blank" rel="noopener noreferrer" aria-label="Facebook de FRAXEL (abre en una pestaña nueva)"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M14 21v-8h3l.5-3H14V8.5c0-1 .4-1.5 1.5-1.5H18V4h-2.5C12.6 4 11 5.6 11 8.5V10H8v3h3v8"/></svg><span>Facebook</span><span aria-hidden="true">↗</span></a></div></div></div>
+        <div class="visit-card"><span class="eyebrow">FRAXEL Inmobiliaria</span><h3>Visita nuestro despacho</h3><p>La ubicación es provisional para la presentación del proyecto.</p><a class="button primary" href="https://maps.app.goo.gl/VZjUi59xmyXfGMJX8" target="_blank" rel="noopener noreferrer">Cómo llegar <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>FRAXEL INMOBILIARIA</span><span>Proyecto académico · Contenido provisional</span><a href="#inicio">Volver al inicio ↑</a></footer>
+  <dialog id="image-viewer" aria-labelledby="viewer-caption">
+    <div class="viewer-shell">
+      <button class="viewer-close" type="button" aria-label="Cerrar imagen">Cerrar <span aria-hidden="true">×</span></button>
+      <button class="viewer-prev" type="button" aria-label="Imagen anterior">‹</button>
+      <figure><img id="viewer-image" src="assets/jardin-comun.png" alt=""><figcaption><span id="viewer-caption"></span><span id="viewer-position" aria-live="polite"></span></figcaption></figure>
+      <button class="viewer-next" type="button" aria-label="Imagen siguiente">›</button>
+    </div>
+  </dialog>
+  <noscript><p class="noscript-note">Activa JavaScript para consultar las fichas, aplicar filtros y ampliar las imágenes. La ubicación y las secciones permanecen disponibles.</p></noscript>
+</body>
+</html>
+
