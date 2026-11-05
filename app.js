@@ -13,10 +13,10 @@ const galleries = {
 };
 // Sustituir estos valores al recibir las fichas definitivas. null significa dato pendiente.
 const properties = [
-  { id: 'casa-01', name: 'Modelo Residencial FRAXEL', location: 'Av. del Vidrio 11, Centro Urbano, 54760 Cuautitlán Izcalli, Méx.', image: 'assets/casa-modelo-fraxel.png', photoIndex: 2, price: 1100000, area: 147, bedrooms: 2, bathrooms: 1 },
-  { id: 'casa-02', name: 'Modelo Residencial FRAXEL', location: 'Av. del Vidrio 11, Centro Urbano, 54760 Cuautitlán Izcalli, Méx.', image: 'assets/casa-modelo-fraxel.png', photoIndex: 1, price: 1100000, area: 147, bedrooms: 2, bathrooms: 1 },
-  { id: 'casa-03', name: 'Modelo Residencial FRAXEL', location: 'Av. del Vidrio 11, Centro Urbano, 54760 Cuautitlán Izcalli, Méx.', image: 'assets/casa-modelo-fraxel.png', photoIndex: 2, price: 1100000, area: 147, bedrooms: 2, bathrooms: 1 },
-  { id: 'casa-04', name: 'Modelo Residencial FRAXEL', location: 'Av. del Vidrio 11, Centro Urbano, 54760 Cuautitlán Izcalli, Méx.', image: 'assets/casa-modelo-fraxel.png', photoIndex: 1, price: 1100000, area: 147, bedrooms: 2, bathrooms: 1 }
+  { id: 'casa-01', name: 'Modelo Residencial FRAXEL', location: 'Av. del Vidrio 11, Centro Urbano, 54760 Cuautitlán Izcalli, Méx.', image: 'assets/casa-modelo.png', photoIndex: 2, price: 1100000, area: 147, bedrooms: 2, bathrooms: 1 },
+  { id: 'casa-02', name: 'Modelo Residencial FRAXEL', location: 'Av. del Vidrio 11, Centro Urbano, 54760 Cuautitlán Izcalli, Méx.', image: 'assets/casa-modelo.png', photoIndex: 1, price: 1100000, area: 147, bedrooms: 2, bathrooms: 1 },
+  { id: 'casa-03', name: 'Modelo Residencial FRAXEL', location: 'Av. del Vidrio 11, Centro Urbano, 54760 Cuautitlán Izcalli, Méx.', image: 'assets/casa-modelo.png', photoIndex: 2, price: 1100000, area: 147, bedrooms: 2, bathrooms: 1 },
+  { id: 'casa-04', name: 'Modelo Residencial FRAXEL', location: 'Av. del Vidrio 11, Centro Urbano, 54760 Cuautitlán Izcalli, Méx.', image: 'assets/casa-modelo.png', photoIndex: 1, price: 1100000, area: 147, bedrooms: 2, bathrooms: 1 }
 ];
 const money = new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', maximumFractionDigits: 0 });
 document.querySelector('#load-map').addEventListener('click', () => {
