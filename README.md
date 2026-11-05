@@ -22,6 +22,6 @@ No se requieren instalaciones ni dependencias para abrir `index.html`. Se puede 
 
 ## Datos pendientes
 
-Los precios, las características, Las fotos son provisionales. Respetar siempre los colores originales del logo de FRAXEL.
+Respetar siempre los colores originales del logo de FRAXEL.
 
 El sitio puede mantenerse publicado durante los siete días de la presentación. No hay eliminación automática programada.
